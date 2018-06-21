@@ -1,0 +1,49 @@
+@import './_mixin';
+
+/**
+ * 字体大小
+ */
+$fs-24: 24px; 
+$fs-20: 20px;
+$fs-18: 18px;
+$fs-16: 16px;
+$fs-14: 14px;
+$fs-12: 12px;
+
+$c-dark: #252525;
+$c-fff: #fff;
+$c-eee: #eee;
+$c-ddd: #ddd;
+$c-main: blue;
+
+/**
+ * 通用样式类
+ */
+// 全屏遮罩层
+.screen-cover {
+  @include setWH();
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+// 清除浮动
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+// 左浮动
+.fl {
+  float: left;
+}
+// 右浮动
+.fr {
+  float: right;
+}
